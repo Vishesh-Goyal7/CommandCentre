@@ -1,0 +1,91 @@
+body {
+  background-color: #0F0F0F;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  color: #E0E0E0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.blink-light {
+  height: 10px;
+  width: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.breathing-card {
+  animation: breathe 4s infinite ease-in-out;
+  background-color: #1C1C1C;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@keyframes breathe {
+  0% { background-color: #1C1C1C; }
+  50% { background-color: #2A2A2A; }
+  100% { background-color: #1C1C1C; }
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #E0E0E0;
+  margin-bottom: 16px;
+}
+
+.login-box input {
+  width: 377px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #2A2A2A;
+  border: none;
+  color: #E0E0E0;
+  border-radius: 6px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00B3B3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #009999;
+}
+
+.error {
+  color: #FF6666;
+  text-align: center;
+  margin-bottom: 10px;
+}
